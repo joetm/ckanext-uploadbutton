@@ -5,7 +5,7 @@
   {{ super() }}
 
   {% if h.check_access('package_update', {'id':pkg.id }) %}
-    {% link_for _(''), controller='package', action='new_resource', id=c.pkg_dict.name, class_='btn', icon='plus' %}
+    {% link_for '', controller='package', action='new_resource', id=c.pkg_dict.name, class_='btn', icon='plus' %}
   {% endif %}
 
 {% endblock %}
